@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLAYER LOBBY — Game Room</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+  <div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+</div>
+<div class="wrap" style="max-width:480px;">
+
+  <div class="topbar">
+    <div class="marquee" style="font-size:14px;">TIC-TAC-TOE<span class="cursor"></span></div>
+    <button class="ghost" id="leave-btn">VERLASSEN</button>
+  </div>
+
+  <div class="panel center">
+    <div class="sub" id="names" style="margin-bottom:18px;">Lade Raum...</div>
+    <div class="board" id="board"></div>
+    <div id="status" style="margin-bottom:14px;">...</div>
+    <button id="rematch-btn" class="hidden">REMATCH</button>
+  </div>
+
+</div>
+
+<div class="map-sig">MAP</div>
+
+<style>.hidden{display:none;}</style>
+<script type="module" src="maintenance.js"></script>
+<script type="module" src="game.js"></script>
+</body>
+</html>

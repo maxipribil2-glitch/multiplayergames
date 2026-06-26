@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLAYER LOBBY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+  <div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+</div>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="marquee">PLAYER LOBBY<span class="cursor"></span></div>
+    <button class="ghost" id="logout-btn">LOGOUT</button>
+  </div>
+  <div class="row topbar" style="margin-top:-18px;">
+    <div class="who" id="who"></div>
+    <a href="admin.html" class="hint" style="text-decoration:underline; cursor:pointer;">admin</a>
+  </div>
+
+  <div class="panel hidden" id="waiting-banner"></div>
+
+  <div class="panel">
+    <h2>SPIEL WÄHLEN</h2>
+    <label for="game-select">Welches Spiel willst du vorschlagen?</label>
+    <select id="game-select"></select>
+  </div>
+
+  <div class="panel">
+    <h2>ONLINE JETZT</h2>
+    <ul class="player-list" id="player-list">
+      <li class="empty">Lade...</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>EINLADUNGEN</h2>
+    <div id="incoming-invites"><div class="empty">Lade...</div></div>
+  </div>
+
+</div>
+
+<div class="map-sig">MAP</div>
+
+<style>.hidden{display:none;}</style>
+<script type="module" src="maintenance.js"></script>
+<script type="module" src="lobby.js"></script>
+</body>
+</html>
